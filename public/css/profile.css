@@ -1,0 +1,13 @@
+.image{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.post_image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;
+}

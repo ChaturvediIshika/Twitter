@@ -1,0 +1,25 @@
+
+<div class="container">
+
+    <%for(let p of posts){%>
+        <hr>
+        <div class="p-3 article m-3 arti">
+
+            <img class="post_image" src="<%=p.creator.image%>" alt="">
+            <!-- <h2 class="artih2"><u><%=p.postTitle%></u></h2> -->
+            <%if(p.creator){%>
+                <a class="artia" href="/profile/<%=p.creator.id%>"><strong><p><%=p.creator.username%></p></strong></a>
+            <%}%>
+            <%=p.date%>
+            <p class="artip"><%=p.pp%></a></p>
+            <!-- <form action="/journal/saved/<%=p.id%>/add" method="post" class="d-inline"><button class="btn btn-success">Save</button></form> -->
+            
+            <!-- <%if(p.creator&&user&&p.creator.id==user.id){%>
+                <a href="/journal/edit/<%=p.id%>"><button class="btn btn-info"> Edit </button></a>
+                <form class="d-inline-block" action="/journal/<%=p.id%>?_method=DELETE" method="POST"><button class="btn btn-danger">DELETE</button></form>
+            <%}%> -->
+            
+        </div>
+        <hr>
+    <%}%>
+</div>

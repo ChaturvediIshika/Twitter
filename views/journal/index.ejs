@@ -1,0 +1,16 @@
+<% layout('layout/boilerplate')-%>
+
+<div class="row mt-5">
+    
+    <form action="/journal/compose" method="POST">
+        <img class="post_image" src="<%=user.image%>" alt="">
+        <!-- <label class="form-label" for="postTitle">Title</label>
+        <input class="form-control" type="text" name="postTitle" id="postTitle"> -->
+        <!-- <label class="form-label" for="pp">Post</label> -->
+        <textarea class="form-control" name="pp" id="pp" cols="1" rows="3"></textarea>
+        <button class="btn btn-primary btn-sm mt-2">Tweet</button>
+    </form>
+    </div>
+
+
+<%-include('../partials/article')%>
