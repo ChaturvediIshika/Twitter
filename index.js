@@ -18,7 +18,8 @@ const reviewRoutes=require('./routes/reviewsRoutes');
 const userRoutes=require('./routes/userRoutes');
 const profileRoutes=require('./routes/profileRoutes');
 
-dburl='mongodb://127.0.0.1:27017/Twitter';
+dburl="mongodb+srv://cishika104:doraemon1234@cluster0.zsj2ef2.mongodb.net/Twitter";
+dburl2='mongodb://127.0.0.1:27017/Twitter';
 
 
 const User = require('./model/user');
